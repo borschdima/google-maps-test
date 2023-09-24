@@ -1,8 +1,27 @@
-# React + Vite
+## Переменные окружения
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Необходимо добавить следующие переменные окружения в .env файл
 
-Currently, two official plugins are available:
+```
+API_KEY
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```
+
+- **API_KEY** - ключ api гугл карт
+
+## Запуск
+
+Версия nodejs **18.16.x**
+
+Устанаваливаем зависимости
+
+```bash
+  npm ci
+```
+
+Запускаем фронтенд dev
+
+```bash
+  env $(cat .env) npm run dev
+```
+
